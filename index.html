@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Sweet Treats</title>
+	</head>
+	<body>
+		<main class="main">
+			<div class="overlay">
+				<section class="form">
+					<h1 id="title">Welcome to Sweet Treats</h1>
+					<p id="description"><em>Place your order using the form below</em></p>
+					<form
+						action="submit.html"
+						id="order-form"
+						class="place-order"
+						target="_self"
+					>
+						<label class="spacing" for="name">Name</label>
+						<br />
+						<input
+							type="text"
+							name="user-info"
+							id="name"
+							placeholder="name"
+							required
+						/>
+						<br />
+						<label class="spacing" for="address">Address</label>
+						<br />
+						<input
+							type="text"
+							name="user-info"
+							id="address"
+							placeholder="address"
+							required
+						/>
+						<br />
+						<label class="spacing" for="name">Phone Number</label>
+						<br />
+						<input
+							type="text"
+							name="user-info"
+							id="number"
+							placeholder="phone number"
+							maxlength="11"
+							minlength="7"
+							required
+						/>
+						<br />
+						<label class="spacing" for="bundle"
+							>Please choose a price package.</label
+						>
+						<br />
+						<select name="bundle" id="bundle">
+							<option value="null" disabled selected>select a package</option>
+							<option value="$25 bundle">$25 bundle</option>
+							<option value="$75 bundle">$75 bundle</option>
+							<option value="$100 bundle">$100 bundle</option>
+						</select>
+
+						<p class="spacing">
+							Should we include a custom card in your order?
+						</p>
+						<input type="radio" name="yes-no" id="yes" value="yes" checked />
+						<label for="yes">Yes</label> <br />
+						<input type="radio" name="yes-no" id="no" value="no" />
+						<label for="no">No</label>
+
+						<p class="spacing">What should we add to your package?</p>
+						<input type="checkbox" id="chocolate" name="food" />
+						<label for="chocolate">Homemade chocolate</label>
+						<br />
+						<input type="checkbox" id="cookies" name="food" />
+						<label for="cookies">Cookies</label>
+						<br />
+						<input type="checkbox" id="candies" name="food" />
+						<label for="candies">Candies</label>
+						<br />
+						<input type="checkbox" id="roses" name="food" />
+						<label for="roses">Roses</label>
+						<br />
+						<br />
+						<label class="spacing" for="comments"
+							>Any requests or comments you'd like to make?</label
+						>
+						<br />
+						<textarea
+							name="comments"
+							id="comments"
+							cols="30"
+							rows="5"
+							placeholder="Enter comments here..."
+						></textarea>
+						<br />
+						<input id="submit" type="submit" value="Place Order" />
+					</form>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,118 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	height: 200vh;
+}
+
+.main {
+	background-image: url("images/valentines-day-roses.jpg");
+	background-repeat: repeat;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(167, 61, 61, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	background-color: rgba(58, 4, 4, 0.7);
+	/* z-index: 15; */
+	color: white;
+	padding: 3em;
+	width: 50%;
+	border-radius: 10px;
+}
+#title,
+#description {
+	text-align: center;
+}
+
+#title {
+	font-size: 2.5rem;
+	margin-bottom: 0.3em;
+}
+
+#description {
+	font-weight: 100;
+}
+
+[type="text"],
+#bundle {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 1em;
+}
+
+#comments {
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+}
+
+label.spacing,
+.spacing {
+	margin: 1em 0 0 0;
+}
+
+#submit {
+	padding: 0.75em 1em;
+	width: 100%;
+	font-size: 1.2rem;
+	margin-top: 1em;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	background-color: rgb(28, 177, 60);
+}
+
+#submit:hover {
+	background-color: rgba(28, 177, 60, 0.5);
+	cursor: pointer;
+}
+
+[type="checkbox"]:hover,
+[type="radio"]:hover {
+	cursor: pointer;
+}
+#back-btn {
+	color: white;
+	text-decoration: underline;
+}
+
+input {
+	accent-color: rgb(167, 61, 61);
+}
+
+input[type="checkbox"],
+[type="radio"] {
+	width: 20px;
+	height: 20px;
+}
+input::placeholder,
+textarea::placeholder {
+	font-size: 18px;
+}
+
+textarea {
+	padding: 1em;
+	font-size: 18px;
+}
